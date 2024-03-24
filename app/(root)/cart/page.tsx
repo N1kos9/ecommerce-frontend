@@ -44,7 +44,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex gap-20 py-16 px-10 max-lg:flex-col max-sm:px-3">
+    <div className="flex gap-20 py-16 px-10 max-lg:flex-col max-sm:px-3 text-white">
       <div className="w-2/3 max-lg:w-full">
         <p className="text-heading3-bold">Shopping Cart</p>
         <hr className="my-6" />
@@ -56,20 +56,22 @@ const Cart = () => {
             {cart.cartItems.map((cartItem) => (
               <div
                 key={cartItem.item._id}
-                className="w-full flex max-sm:flex-col max-sm:gap-3 hover:bg-grey-1 px-4 py-3 items-center max-sm:items-start justify-between"
+                className="w-full flex max-sm:flex-col max-sm:gap-3 hover:bg-grey-400 px-4 py-3 items-center max-sm:items-start justify-between"
               >
                 <div className="flex items-center">
                   <Image
                     src={cartItem.item.media[0]}
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                     className="rounded-lg w-32 h-32 object-cover"
                     alt="product"
                   />
                   <div className="flex flex-col gap-3 ml-4">
                     <p className="text-body-bold">{cartItem.item.title}</p>
-                    {cartItem.color && (
-                      <p className="text-small-medium">{cartItem.color}</p>
+                    {cartItem.item.category && (
+                      <p className="text-small-medium">
+                        {cartItem.item.category}
+                      </p>
                     )}
                     {cartItem.size && (
                       <p className="text-small-medium">{cartItem.size}</p>
@@ -78,7 +80,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-4 items-center">
+                {/* <div className="flex gap-4 items-center">
                   <MinusCircle
                     className="hover:text-red-1 cursor-pointer"
                     onClick={() => cart.decreaseQuantity(cartItem.item._id)}
@@ -88,7 +90,7 @@ const Cart = () => {
                     className="hover:text-red-1 cursor-pointer"
                     onClick={() => cart.increaseQuantity(cartItem.item._id)}
                   />
-                </div>
+                </div> */}
 
                 <Trash
                   className="hover:text-red-1 cursor-pointer"
@@ -100,7 +102,7 @@ const Cart = () => {
         )}
       </div>
 
-      <div className="w-1/3 max-lg:w-full flex flex-col gap-8 bg-grey-1 rounded-lg px-4 py-5">
+      <div className="w-1/3 max-lg:w-full flex flex-col gap-8  rounded-lg px-4 py-5">
         <p className="text-heading4-bold pb-4">
           Summary{" "}
           <span>{`(${cart.cartItems.length} ${
@@ -112,7 +114,7 @@ const Cart = () => {
           <span>$ {totalRounded}</span>
         </div>
         <button
-          className="border rounded-lg text-body-bold bg-white py-3 w-full hover:bg-black hover:text-white"
+          className="border rounded-lg text-body-bold py-3 w-full hover:bg-black hover:text-white"
           onClick={handleCheckout}
         >
           Proceed to Checkout

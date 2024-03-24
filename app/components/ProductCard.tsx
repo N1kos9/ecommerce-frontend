@@ -14,7 +14,7 @@ const ProductCard = ({ product, updateSignedInUser }: ProductCardProps) => {
     <>
       <Link
         href={`/products/${product._id}`}
-        className="w-[400px] flex flex-col gap-2 "
+        className="w-[500px] flex flex-col gap-2 "
       >
         <div className="w-full h-full">
           <div className="text-[#0d2503] bg-[#0d2503] bg-transparent shadow-glowingSmallerBox rounded-xl border border-white/[0.9]">
@@ -23,12 +23,15 @@ const ProductCard = ({ product, updateSignedInUser }: ProductCardProps) => {
               alt="product"
               width={550}
               height={550}
-              className="h-[250px] w-full object-cover rounded-xl "
+              className="h-[300px] w-full object-cover rounded-xl "
             />
           </div>
-          <div id="pricing" className=" text-center">
-            <p className="text-base-bold text-[2.5em] mt-2">{product.title}</p>
-            <p className="text-small-medium text-grey-2 mt-2">
+          <div
+            id="pricing"
+            className=" text-center flex flex-col justify-center items-center"
+          >
+            <p className="text-base-bold text-[1.9em] mt-4">{product.title}</p>
+            <p className="text-small-medium text-grey-2 w-1/2 flex justify-center items-center text-center mt-2">
               {product.category}
             </p>
           </div>
