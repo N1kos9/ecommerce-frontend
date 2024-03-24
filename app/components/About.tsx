@@ -11,11 +11,14 @@ const About = () => {
         <div className="mt-6 h-bigBox lg:w-1/2 w-5/6 text-[#0d2503] shadow-glowingBox rounded-xl border border-white/[0.3]"></div>
         <div className="mt-12 text-center items-center justify-center flex flex-col">
           <p className="text-white text-center mt-16 opacity-50 lg:w-1/2 w-5/6 text-[1.5rem] text-balance">
-            Introducing &quot;The Beginner&apos;s Fast Track To Wealth&quot;,
-            It&apos;s the ultimate guide for folks from any background to start
-            making $10,000+ every month. Packed with easy-to-follow methods,
-            this course has everything you need to fast track your journey to
-            financial success.
+            Introducing{" "}
+            <span className="nume">
+              &quot;The Beginner&apos;s Fast Track To Wealth&quot;
+            </span>
+            , It&apos;s the ultimate guide for folks from any background to
+            start making $10,000+ every month. Packed with easy-to-follow
+            methods, this course has everything you need to fast track your
+            journey to financial success.
           </p>
           <br />
           <p className="text-white text-center mt-16 opacity-50 lg:w-1/2 w-5/6 text-[1.5rem] text-balance">

@@ -54,19 +54,19 @@ const Navbar = () => {
 
         {dropdownMenu && (
           <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg bg-white text-black text-base-bold lg:hidden">
-            <Link href="/" className="hover:text-red-1">
+            <Link href="/" className="hover:text-red-1 text-center">
               Home
             </Link>
 
-            <Link
+            {/* <Link
               href={user ? "/orders" : "/sign-in"}
               className="hover:text-red-1"
             >
               Orders
-            </Link>
+            </Link> */}
             <Link
               href="/cart"
-              className="flex items-center gap-3 rounded-lg px-2 py-1 hover:bg-black hover:text-white"
+              className="flex items-center gap-3 text-center rounded-lg px-2 py-1 hover:bg-black hover:text-white"
             >
               <ShoppingCart />
               <p className="text-base-bold">Cart ({cart.cartItems.length})</p>

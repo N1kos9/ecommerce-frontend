@@ -3,7 +3,7 @@
 import { useState } from "react";
 import HeartFavorite from "./HeartFavorite";
 import { MinusCircle, PlusCircle } from "lucide-react";
-
+import Link from "next/link";
 import useCart from "@/lib/hooks/useCart";
 
 const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
@@ -18,7 +18,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
   const cart = useCart();
 
   return (
-    <div className="max-w-[400px] flex flex-col gap-4">
+    <div className="max-w-[400px] flex flex-col gap-4 justify-center lg:h-[40rem]">
       <div className="flex justify-between items-center">
         <p className="text-heading3-bold">{productInfo.title}</p>
       </div>
@@ -87,20 +87,21 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
           />
         </div>
       </div> */}
-
-      <button
-        className="outline border border-white/[0.5] text-base-bold py-3 rounded-lg hover:bg-black hover:text-white"
-        onClick={() => {
-          cart.addItem({
-            item: productInfo,
-            quantity,
-            color: selectedColor,
-            size: selectedSize,
-          });
-        }}
-      >
-        Add To Cart
-      </button>
+      <Link href="/cart">
+        <button
+          className="outline border border-white/[0.5] text-base-bold py-3 rounded-lg hover:bg-black hover:text-white"
+          onClick={() => {
+            cart.addItem({
+              item: productInfo,
+              quantity,
+              color: selectedColor,
+              size: selectedSize,
+            });
+          }}
+        >
+          Add To Cart
+        </button>
+      </Link>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Gallery = ({ productMedia }: { productMedia: string[] }) => {
   const [mainImage, setMainImage] = useState(productMedia[0]);
 
   return (
-    <div className="flex flex-col gap-3 max-w-[500px]">
+    <div className="flex flex-col gap-3 max-w-[500px] lg:h-[40rem] justify-center items-center">
       <Image
         src={mainImage}
         width={1000}

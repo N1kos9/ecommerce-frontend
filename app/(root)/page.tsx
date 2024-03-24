@@ -4,7 +4,8 @@ import Hero from "../components/Hero";
 import Image from "next/image";
 import Pricing from "../components/Pricing";
 import About from "../components/About";
-import Timeline from "../components/Timeline";
+// import Timeline from "../components/Timeline";
+import GetStarted from "../components/getStarted";
 import Footer from "../components/Footer";
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <Hero />
       <Pricing />
       <About />
-      <Timeline />
-
+      {/* <Timeline /> */}
+      <GetStarted />
       <ProductList />
       <Footer />
     </>
