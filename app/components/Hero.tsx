@@ -21,7 +21,7 @@ const Hero = () => {
             </button>
           </Link>
           <p className="text-[12px] opacity-50 italic">
-            You&apos;ll get redirected our buy page to complete the checkout
+            You&apos;ll get redirected to our buy page to complete the checkout
           </p>
         </div>
       </div>

@@ -89,7 +89,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
       </div> */}
       <Link href="/cart">
         <button
-          className="outline border border-white/[0.5] text-base-bold py-3 rounded-lg hover:bg-black hover:text-white"
+          className="outline border border-white/[0.5] text-base-bold py-3 p-2 rounded-lg hover:bg-black hover:text-white"
           onClick={() => {
             cart.addItem({
               item: productInfo,

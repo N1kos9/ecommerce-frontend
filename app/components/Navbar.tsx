@@ -44,7 +44,8 @@ const Navbar = () => {
           className="flex items-center gap-3 rounded-lg px-2 py-1 hover:bg-black hover:text-white max-md:hidden"
         >
           <ShoppingCart />
-          <p className="text-base-bold">{cart.cartItems.length}</p>
+          <p className="text-base-bold"></p>
+          {/* {cart.cartItems.length} */}
         </Link>
 
         <Menu
@@ -69,7 +70,8 @@ const Navbar = () => {
               className="flex items-center gap-3 text-center rounded-lg px-2 py-1 hover:bg-black hover:text-white"
             >
               <ShoppingCart />
-              <p className="text-base-bold">Cart ({cart.cartItems.length})</p>
+              <p className="text-base-bold">Cart </p>
+              {/* ({cart.cartItems.length}) */}
             </Link>
           </div>
         )}
