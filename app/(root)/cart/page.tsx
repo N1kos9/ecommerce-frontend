@@ -55,7 +55,7 @@ const Cart = () => {
           <div>
             {cart.cartItems.map((cartItem) => (
               <div
-                key={cartItem}
+                key={cartItem.item._id}
                 className="w-full flex max-sm:flex-col max-sm:gap-3 hover:bg-grey-1 px-4 py-3 items-center max-sm:items-start justify-between"
               >
                 <div className="flex items-center">
