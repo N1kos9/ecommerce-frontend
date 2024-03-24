@@ -3,6 +3,7 @@
 import useCart from "@/lib/hooks/useCart";
 
 import { useUser } from "@clerk/nextjs";
+import { url } from "inspector";
 import { MinusCircle, PlusCircle, Trash } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -53,7 +54,10 @@ const Cart = () => {
         ) : (
           <div>
             {cart.cartItems.map((cartItem) => (
-              <div className="w-full flex max-sm:flex-col max-sm:gap-3 hover:bg-grey-1 px-4 py-3 items-center max-sm:items-start justify-between">
+              <div
+                key={cartItem}
+                className="w-full flex max-sm:flex-col max-sm:gap-3 hover:bg-grey-1 px-4 py-3 items-center max-sm:items-start justify-between"
+              >
                 <div className="flex items-center">
                   <Image
                     src={cartItem.item.media[0]}
