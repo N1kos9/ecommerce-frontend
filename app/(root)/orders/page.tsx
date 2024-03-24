@@ -39,35 +39,35 @@ const Orders = async () => {
                   />
                   <div className="flex flex-col justify-between">
                     <p className="text-small-medium">
-                      Title:{" "}
+                      Title:
                       <span className="text-small-bold">
                         {orderItem.product.title}
                       </span>
                     </p>
-                    {orderItem.color && (
+                    {/* {orderItem.color && (
                       <p className="text-small-medium">
                         Color:{" "}
                         <span className="text-small-bold">
                           {orderItem.color}
                         </span>
                       </p>
-                    )}
-                    {orderItem.size && (
+                    )} */}
+                    {/* {orderItem.size && (
                       <p className="text-small-medium">
                         Size:{" "}
                         <span className="text-small-bold">
                           {orderItem.size}
                         </span>
                       </p>
-                    )}
+                    )} */}
                     <p className="text-small-medium">
-                      Unit price:{" "}
+                      Unit price:
                       <span className="text-small-bold">
                         {orderItem.product.price}
                       </span>
                     </p>
                     <p className="text-small-medium">
-                      Quantity:{" "}
+                      Quantity:
                       <span className="text-small-bold">
                         {orderItem.quantity}
                       </span>
