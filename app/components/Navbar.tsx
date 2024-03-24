@@ -53,7 +53,7 @@ const Navbar = () => {
         />
 
         {dropdownMenu && (
-          <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg bg-white text-base-bold lg:hidden">
+          <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg bg-white text-black text-base-bold lg:hidden">
             <Link href="/" className="hover:text-red-1">
               Home
             </Link>
