@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo1 from "@/public/logo1.jpg";
 import logo3 from "@/public/logo3.jpg";
 import cover from "@/public/Untitled.png";
+import realCover from "@/public/realCover.png";
 const getStarted = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const getStarted = () => {
 
       <div className="mt-10 flex flex-col justify-center items-center">
         <div>
-          <h1 className="lg:text-[3rem] text-[2rem] font-bold  w-fit justify-center flex items-center text-center uppercase text-green-700">
+          <h1 className="lg:text-[3rem] text-[1.7rem] font-bold  w-fit justify-center flex items-center text-center uppercase text-green-300">
             ready to make money?
           </h1>
           <div className="bg-black w-full h-1 border-b-2 border-green-700 blur-sm"></div>
@@ -21,7 +22,7 @@ const getStarted = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center gap-16 mt-20 text-white">
           <div className=" text-[#0d2503] shadow-glowingSmallBox rounded-xl">
             <Image
-              src={cover}
+              src={realCover}
               alt=""
               width={250}
               height={300}
@@ -29,7 +30,7 @@ const getStarted = () => {
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-center text-[2rem] uppercase text-green-700">
+            <h1 className="text-center lg:text-[2rem] text-[1.7rem] uppercase  text-green-300">
               The beginners fast track <br /> to wealth
             </h1>
             <Link
