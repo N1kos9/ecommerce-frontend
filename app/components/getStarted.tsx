@@ -41,6 +41,22 @@ const getStarted = () => {
             </Link>
           </div>
         </div>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-16 mt-20 text-white">
+          <div className=" text-[#0d2503] shadow-glowingSmallBox rounded-xl">
+            <Image
+              src={cover}
+              alt=""
+              width={250}
+              height={300}
+              className="rounded-xl w-full h-full border border-white/[0.4]"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-center lg:text-[2rem] text-[1.7rem] uppercase  text-green-300">
+              The beginners fast track <br /> to wealth
+            </h1>
+          </div>
+        </div>
       </div>
       <div className=" text-center flex justify-center items-cente mt-20">
         <div className="section-8 text-center flex justify-center items-center"></div>
