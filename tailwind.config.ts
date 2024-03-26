@@ -105,6 +105,7 @@ const config: Config = {
         glowingBox: "0 0 100px 0px",
         glowingSmallBox: "0 0 100px 20px",
         glowingSmallerBox: "0 0 100px 40px",
+        underlineGlow: "0px 0px 40px 40px #000000",
       },
       height: {
         bigBox: "30rem",
