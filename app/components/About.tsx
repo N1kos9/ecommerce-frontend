@@ -15,7 +15,7 @@ const About = () => {
             alt=""
             width={400}
             height={300}
-            className="h-full w-full rounded-xl items-center text-center"
+            className="rounded-xl w-full h-full border border-white/[0.4]"
           />
         </div>
         <div className="mt-12 text-center items-center justify-center flex flex-col">
