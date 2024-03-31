@@ -5,6 +5,7 @@ import logo1 from "@/public/logo1.jpg";
 import logo3 from "@/public/logo3.jpg";
 import cover from "@/public/Untitled.png";
 import realCover from "@/public/realCover.png";
+import masteryPack from "@/public/masterypack.jpg";
 const getStarted = () => {
   return (
     <>
@@ -53,7 +54,7 @@ const getStarted = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center gap-16 mt-20 text-white">
           <div className=" text-[#0d2503] shadow-glowingSmallBox rounded-xl">
             <Image
-              src={logo3}
+              src={masteryPack}
               alt=""
               width={250}
               height={300}
