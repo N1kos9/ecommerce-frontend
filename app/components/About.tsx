@@ -9,7 +9,7 @@ const About = () => {
           <h1>Here&apos;s what you will get...</h1>
         </div> */}
         <h1 className="text-[4rem] text-white mt-12">
-          Here's what you will get
+          Here&apos;s what you will get
         </h1>
         <div className="mt-8 lg:h-bigBox h-[20rem] lg:w-1/4 flex items-center justify-center w-5/6 text-[#0d2503] shadow-glowingBox rounded-xl border border-white/[0.3]">
           <Image
@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="mt-12 text-center items-center justify-center flex flex-col">
           <p className="text-white text-center mt-16 opacity-50 lg:w-1/2 w-5/6 text-[1.5rem] text-balance">
-            Introducing{" "}
+            Introducing
             <span className="nume">
               &quot;The Beginner&apos;s Fast Track To Wealth&quot;
             </span>
