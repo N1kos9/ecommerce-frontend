@@ -63,7 +63,7 @@ const getStarted = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <h1 className="lg:text-center font-bold text-center lg:text-[2rem] text-[1.7rem] uppercase  text-green-300">
-              free ai prompt pack <br /> (buy one get one for free)
+              free ai pack <br /> (buy one get one for free)
             </h1>
             <div className="lg:w-1/2 w-5/6 bg-bg-gradient-custom border-green-500/[0.2] text-bold mt-8 text-[1.3rem] border-8  rounded-md uppercase p-4 text-center">
               <p className="font-bold">

@@ -8,7 +8,7 @@ const Pricing = () => {
         <h1 className="text-[2rem] line-through leading-tight opacity-50">
           From $50
         </h1>
-        <h1 className="text-[4rem] leading-tight">To $29.99</h1>
+        <h1 className="text-[3.5rem] leading-tight"> $29.99</h1>
       </div>
       <div className="section-6"></div>
     </div>
