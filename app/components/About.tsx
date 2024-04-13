@@ -8,7 +8,7 @@ const About = () => {
         {/* <div className="uppercase text-green-700 text-center mt-32 text-[1.5rem] italic">
           <h1>Here&apos;s what you will get...</h1>
         </div> */}
-        <h1 className="md:text-[3.2rem] text-[2.5rem] text-center text-white mt-12 italic">
+        <h1 className="md:text-[1.5rem] tracking-wider uppercase text-[1.2rem] text-center text-white mt-12 italic">
           Here&apos;s what you will get
         </h1>
         <div className="mt-8 lg:h-bigBox h-[20rem] lg:w-1/4 flex items-center justify-center w-5/6 text-[#0d2503] shadow-glowingBox rounded-xl border border-white/[0.3]">
